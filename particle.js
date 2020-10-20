@@ -33,6 +33,7 @@ class Particle {
         if (d < 70)
             speed = map(d, 0, 200, 0, this.maxSpeed);
 
+
         targeted.setMag(speed);
 
         return p5.Vector.sub(targeted, this.vel).limit(this.maxForce);
